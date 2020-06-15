@@ -5,7 +5,7 @@
 #include <math.h>
 
 
-int main(int arg, char** argv){
+int main(int argc, char** argv){
 	ros::init(argc, argv, "joint_publisher");
 	ros::NodeHandle nh;
 	ros::Publisher joint_pub = nh.advertise<sensor_msgs::JointState>("joint_states", 10);
